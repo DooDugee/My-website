@@ -3,24 +3,27 @@
 }
 
 body {
-    font-family: sans-serif;
-    padding: 10px;
-    background: #f1f1f1;
+    font-family: Cafe24Oneprettynight;
+    background-image: url('image/Background.jpg');
+    background-size: cover;
 }
 
 .header {
     padding: 30px;
     text-align: center;
-    background: white;
+    color: white;
+    background: rgba(255, 255, 255, 0.4);
 }
 
 .header h1 {
+    margin: 0px;
     font-size: 50px;
+    font-family: Recipekorea;
 }
 
 nav ul {
     width: 100%;
-    background-color: rgba(44, 42, 39, 0.983);
+    background-color: rgba(44, 42, 39);
     margin: 0;
     padding: 0;
 }
@@ -67,7 +70,7 @@ nav ul li {
 }
 
 .card {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.4);
     padding: 20px;
     margin-top: 20px;
 }
@@ -80,7 +83,20 @@ nav ul li {
 
 footer {
     padding: 20px;
-    text-align: center;
-    background: #ddd;
+    text-align: right;
+    background: rgba(0, 0, 0, 0.5);
     margin-top: 20px;
+}
+
+@font-face {
+    font-family: 'Recipekorea';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/Recipekorea.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Cafe24Oneprettynight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Oneprettynight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
