@@ -1,2 +1,1 @@
-let score;
-score = prompt("입력해 주세요");
+
