@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="image/gamepad.ico">
     <link rel="stylesheet" href="style.CSS">
     <script src="JS.JS"></script>
     <title>My game blog</title>
@@ -17,8 +18,9 @@
 <nav>
   
         <ul>
+            <span id="dropdownex">게임 사이트 링크</span><br>
             <li class="dropdown">
-                <div class="dropdown-menu">윙크1</div>
+                <div class="dropdown-menu">국내</div>
                 <div class="dropdown-content">
                     <a href="#">Menu1-1</a>
                     <a href="#">Menu1-2</a>
@@ -36,33 +38,37 @@
                 </div>
             </li>
             <li class="dropdown">
-                <div class="dropdown-menu">윙크3</div>
+                <div class="dropdown-menu">인디</div>
                 <div class="dropdown-content">
-                    <a href="#">Menu3-1</a>
-                    <a href="#">Menu3-2</a>
-                    <a href="#">Menu3-3</a>
-                    <a href="#">Menu3-4</a>
+                    <a href="https://gamejolt.com/"><img src="image/gameJolt.png" height="16px" width="16px">Game Jolt</a>
+                    <a href="https://itch.io/"><img src="image/itch.png" height="16px" width="16px">Itch.io</a>
+                    <a href="https://ldjam.com/games"><img src="image/ludum dare.png" height="16px" width="16px"> Ludum Dare</a>
                 </div>
             </li>
+
         </ul>
   </nav>
 
 
 <div class="contents">
+    <div class="rightcontent">
+        <div id="search">
+          <input type="text" id="searchText">
+          <button onclick ="research()">검색</button>
+          <p>구글검색</p>
+        </div>  
+    </div>
+
+    <div class="leftcontent">
+        <p id="text-content">👈눌러보세요!</p>
+    </div>
+
     <div class="content-Select">
-        <button onclick="select(0)" class="content-button" id="select"></button>
+        <button onclick="select(0)" class="content-button" id="default"></button>
         <button onclick="select(1)" class="content-button" id="default"></button>
         <button onclick="select(2)" class="content-button" id="default"></button>
         <button onclick="select(3)" class="content-button" id="default"></button>
-      </div>
-      
-  <div class="leftcontent">
-    
-  </div>
-  
-  <div class="rightcontent">
-    
-  </div>
+    </div>
 
 </div>
 

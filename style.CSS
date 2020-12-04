@@ -10,13 +10,12 @@ body {
 }
 
 .header {
-    padding: 30px;
+    padding: 40px 0 40px 10px;
     color: white;
     background: rgba(255, 255, 255, 0.4);
 }
 
 .header h1 {
-    margin: 16px 0 0 0;
     font-size: 50px;
     font-family: Recipekorea;
 }
@@ -36,7 +35,11 @@ nav ul li {
     padding: 16px;
     font-size: 16px;
 }
-
+#dropdownex{
+    position: absolute;
+    border: 3px Double white;
+    color: white;
+}
 .dropdown-content {
     display: none;
     position: absolute;
@@ -59,53 +62,94 @@ nav ul li {
 .dropdown-content a:hover {background-color: #f1f1f1}
 
 .leftcontent {
-    float: left;
-    width: 75%;
-    height: 1420px;
+    float: right;
+    width: 72%;
+    height: 1000px;
     background-color: rgba(255, 255, 255);
-    margin-top: 20px;
+    padding: 20px;
+    margin-top: 1%;
 }
-.content-Select{
-    float: left;
-    width: 100px;
-    margin-top: 20px;
-}
+
 .rightcontent {
     float: right;
-    width: 19%;
-    height: 1000px;
+    width: 20%;
+    height: 500px;
     background-color: rgba(255, 255, 255, 0.4);
     padding: 20px;
+    margin-top: 1%;
+    margin-left: 1%;
+}
+.content-Select{
+    float: right;
+    width: 3vw;
+    height: 20vw;
     margin-top: 20px;
+    transition: 200ms;
+}
+.content-Select:hover{
+    width: 6vw;
+    height: 24vw;
 }
 
 .content-button{
     float: right;
     border: 0;
-    outline: 0;
-    width: 100px;
-    height: 100px;
+    outline: 0;   
+    transition: 200ms;
 }
 #select{
     background-color: white;
+    width: 100%;
+    height: 25%;
 }
 #default{
     background-color: rgba(255, 255, 255, 0.4);
-    width: 90px;
-    height: 90px;
-    transition: 300ms;
+    width: 80%;
+    height: 20%;
 }
 
 #default:hover{
     background-color: rgba(255, 255, 255, 0.6);
-    width: 100px;
-    height: 100px;
+    width: 90%;
+    height: 22.5%;
 }
 
 .contents:after {
     content: "";
     display: table;
     clear: both;
+}
+
+#search{
+    background-color: white;
+    height: 40px;
+    width: 100%;
+    border: 1px solid rgb(44, 42, 39);
+}
+#search input{
+    width: 75%;
+    height: 100%;
+    border: 0;
+    outline: none;
+    float: left;
+}
+#search p{
+    color: white;
+    float: right;
+}
+#search button{
+    width: 25%;
+    height: 100%;
+    border: 0;
+    outline: none;
+    background-color: rgb(44, 42, 39);
+    color: white;
+}
+#search button:hover{
+    background-color: rgb(66, 64, 61);
+}
+#search button:active{
+    background-color:rgb(44, 42, 39);
 }
 
 footer {
