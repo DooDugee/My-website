@@ -1,8 +1,5 @@
 function select(a){
-    var div = [document.getElementsByClassName('content-button')[0], 
-    document.getElementsByClassName('content-button')[1],
-    document.getElementsByClassName('content-button')[2], 
-    document.getElementsByClassName('content-button')[3]];
+    var div = document.getElementsByClassName('content-button');
 
     for(var i = 0;i<4;i++){
         div[i].id = "default";
@@ -14,10 +11,10 @@ function select(a){
     writeContent(a);
 }
 function removeContent(){
-    var content = document.getElementById('text-content');
+    var content = document.querySelector('.leftcontent');
 
-
-    content.parentNode.removeChild(content);
+    while(content.hasChildNodes())
+        content.removeChild(content.firstChild);
 }
 function writeContent(a){
     var section = document.querySelector('.leftcontent');
@@ -30,14 +27,43 @@ function writeContent(a){
             section.innerHTML += '<p id="text-content">안녕하세요 반갑습니다2</p>';
             break;
         case 2:
-            section.innerHTML += '<p id="text-content">안녕하세요 반갑습니다3</p>';
+            section.innerHTML += '<p id="text-content">'
+            +'<h1>대화의 장</h1>'
+            +'<hr>'
+            + '<textarea id="postInput" cols="100" rows="10" placeholder="내용" style="resize: none;"></textarea><br>'
+            +'<input type="text" id="nameInput" placeholder="이름">'
+            +'<button onclick="post()">글쓰기</button>'
+            +'</p>';
             break;
         case 3:
-            section.innerHTML += '<p id="text-content">안녕하세요 반갑습니다4</p>';
+            section.innerHTML += '<p id="text-content">안녕하세요 반갑습니다3</p>';
             break;       
     }
 }
 
+
+function post(){
+    var timeline = document.querySelector('.leftcontent');
+    const posterName = document.querySelector('#nameInput').value;
+    const postValue = document.querySelector('#postInput').value;
+
+    if(postValue == ''){
+        alert("내용을 입력해 주세요!");
+        return;
+    }
+    if(posterName == ''){
+        alert("이름을 입력해 주세요!");
+        return;
+    }
+    
+
+    timeline.innerHTML += '<div id = "timeline">'+
+    '<div class="container">'+
+    '<h2>'+ posterName +'<hr>'+'</h2>'+
+    '<div class="fakeimg">'+'<p>'+postValue+'</p>'+'</div>'+
+    '</div>'+
+    '</div>';
+}
 function research(){
     const postValue = document.querySelector('#searchText').value;
     if(postValue != '')

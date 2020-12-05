@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko-kr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,26 +15,25 @@
     <p>내 게임 블로그</p>
   </div>
 
-<nav>
-  
+    <nav>
         <ul>
-            <span id="dropdownex">게임 사이트 링크</span><br>
+            <span id="dropdownex">게임 사이트 링크</span>
             <li class="dropdown">
                 <div class="dropdown-menu">국내</div>
                 <div class="dropdown-content">
-                    <a href="#">Menu1-1</a>
-                    <a href="#">Menu1-2</a>
-                    <a href="#">Menu1-3</a>
-                    <a href="#">Menu1-4</a>
+                    <a href="https://www.nexon.com/"><img src="image/nexon.ico" height="16px" width="16px">넥슨</a>
+                    <a href="http://www.netmarble.net/"><img src="image/netmable.ico" height="16px" width="16px">넷마블</a>
+                    <a href="https://www.onstove.com/"><img src="image/stove.ico" height="16px" width="16px">스토브</a>
+                    <a href="https://www.plaync.com/"><img src="image/plaync.ico" height="16px" width="16px">플레이 엔씨</a>
                 </div>
             </li>
             <li class="dropdown">
-                <div class="dropdown-menu">윙크2</div>
+                <div class="dropdown-menu">해외</div>
                 <div class="dropdown-content">
-                    <a href="#">Menu2-1</a>
-                    <a href="#">Menu2-2</a>
-                    <a href="#">Menu2-3</a>
-                    <a href="#">Menu2-4</a>
+                    <a href="https://www.blizzard.com/ko-kr/"><img src="image/blizzard.ico" height="16px" width="16px">블리자드</a>
+                    <a href="https://www.nintendo.co.kr/"><img src="image/nintendo.ico" height="16px" width="16px">닌텐도</a>
+                    <a href="https://store.steampowered.com/"><img src="image/steam.ico" height="16px" width="16px">스팀</a>
+                    <a href="https://www.ea.com/ko-kr/games"><img src="image/EA.png" height="16px" width="16px">EA</a>
                 </div>
             </li>
             <li class="dropdown">
@@ -53,21 +52,21 @@
 <div class="contents">
     <div class="rightcontent">
         <div id="search">
-          <input type="text" id="searchText">
-          <button onclick ="research()">검색</button>
-          <p>구글검색</p>
+            <input type="text" id="searchText">
+            <button onclick ="research()">검색</button>
+            <p>구글검색</p>
         </div>  
     </div>
 
     <div class="leftcontent">
-        <p id="text-content">👈눌러보세요!</p>
+        <p id="text-content">👈눌러보세요!</p>          
     </div>
 
     <div class="content-Select">
-        <button onclick="select(0)" class="content-button" id="default"></button>
-        <button onclick="select(1)" class="content-button" id="default"></button>
-        <button onclick="select(2)" class="content-button" id="default"></button>
-        <button onclick="select(3)" class="content-button" id="default"></button>
+        <button onclick="select(0)" class="content-button" id="default"><img src="image/bookIcon.png" alt="" style="width: 70%;"></button>
+        <button onclick="select(1)" class="content-button" id="default"><img src="image/playIcon.png" alt="" style="width: 70%;"></button>
+        <button onclick="select(2)" class="content-button" id="default"><img src="image/chatIcon.ico" alt="" style="width: 70%;"></button>
+        <button onclick="select(3)" class="content-button" id="default"><img src="image/infoIcon.png" alt="" style="width: 70%;"></button>
     </div>
 
 </div>
