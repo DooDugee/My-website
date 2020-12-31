@@ -21,7 +21,8 @@ function writeContent(a){
 
     switch (a){
         case 0:
-            section.innerHTML += '<p id="text-content">안녕하세요 반갑습니다!</p>';
+            section.innerHTML += '<h1 style="text-align:center">안녕하세요 반갑습니다!</h1>'
+            +'<p id="text-content">이곳은 저의 게임 블로그 입니다!</p>';
             break;
         case 1:
             section.innerHTML += '<p id="text-content">안녕하세요 반갑습니다2</p>';
