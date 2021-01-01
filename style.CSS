@@ -4,6 +4,9 @@
 }
 
 body {
+    display: flex;
+    min-height: 100vh; 
+    flex-direction: column;
     font-family: Cafe24Oneprettynight;
     background-image: url('image/Background.jpg');
     background-size: cover;
@@ -64,18 +67,18 @@ nav ul li {
 .dropdown-content a:hover {background-color: #f1f1f1}
 
 .contents{
+    flex: 1;
     z-index: 0;
 }
 .leftcontent {
     float: right;
     width: 76%;
-    height: 1000px;
+    min-height: 700px;
     background-color: rgba(255, 255, 255);
     padding: 20px;
     margin-top: 1%;
 }
 #text-content{
-    text-align: center;
     font-size: 30px;
 }
 .rightcontent {
@@ -173,12 +176,50 @@ nav ul li {
     padding: 17px 30px;
     border: 3px solid rgb(44, 42, 39);;
 }
+
+#timeline{
+    font-size: 25px;
+    text-align: left;
+    margin: 20px;
+}
+#img-box{
+    position:relative;
+    width: 30%; 
+    display: block;
+    float: left;
+    margin: 20px;
+}
+#img-box img{
+    width:100%; 
+    object-fit:cover;
+}
+#info-box{
+    position:absolute;
+    opacity:0;
+    top:0; left:0;
+    width:100%; height:100%;
+    padding: 20px;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    background: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    transition: all ease-in 0.3s;
+
+    font-size: 30px;
+    text-align: center;
+}
+#img-box:hover #info-box{
+    opacity:1;
+    transform: translate(10px,10px);
+}
 footer {
     padding: 20px;
     text-align: right;
     background: rgba(0, 0, 0, 0.5);
     margin-top: 20px;
 }
+
 
 @font-face {
     font-family: 'Recipekorea';
